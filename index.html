@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COTTON CALCULATOR </title>
+    <link rel="stylesheet" href="styles_1.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="cotton.jpeg" alt="Logo" class="logo logo1">
+            <h1>COTTON CALCULATOR </h1>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+        </header>
+        <nav id="side-menu" class="side-menu">
+            <div class="profile">
+                <img src="cotton.jpeg" alt="Logo" class="logo">
+                <h2>COTTON CALCULATOR </h2>
+                
+            </div>
+            <hr><hr>
+            <ul>
+                <li><a href="#">Ginning</a></li>
+                <li><a href="#">Oil Mill</a></li>
+                <li><a href="#">Spinning</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('forward')">Ginning Forward</button>
+            <button class="tab-button" onclick="showTab('reverse')">Ginning Reverse</button>
+        </div>
+        <div id="forward" class="tab-content active">
+            <div class="input-group">
+                <label for="kapas"><h3>Kapas</h3></label>
+                <input type="number" placeholder="કપાસ નો ભાવ" id="kapas" step="any">
+                <span><h4>Rs./20 Kgs</h4></span>
+            </div>
+            <div class="input-group">
+                <label for="expenses"><h3>Expenses</h3></label>
+                <input type="number" id="expenses" placeholder="વધારા નો ખર્ચ" step="any">
+                <span><h4>Rs./20 Kgs</h4></span>
+            </div>
+            <div class="input-group">
+                <label for="cotton-seed"><h3>Cotton Seed</h3></label>
+                <input type="number" id="cotton-seed" placeholder="કપસિયા નો ભાવ" step="any">
+                <span><h4>Rs./20 Kgs</h4></span>
+            </div>
+            <div class="input-group">
+                <label for="out-turn"><h3>Out Turn</h3></label>
+                <input type="number" id="out-turn" placeholder="ઉતારો" step="any">
+                <span><h4>%</h4></span>
+            </div>
+            <div class="input-group">
+                <label for="shortage"><h3>Shortage</h3></label>
+                <input type="number" id="shortage" placeholder="ઘાટી" step="any">
+                <span><h4>%</h4></span>
+            </div>
+            <br>
+            <div class="result">
+                <span>Cost of Cotton</span>
+                <span id="cost-of-cotton"><h3>0</h3></span>
+                <span>Rs./Candy</span>
+            </div>
+        </div>
+        <div id="reverse" class="tab-content">
+            <div class="input-group">
+                <label for="cotton-rate"><h3>Cotton Rate</h3></label>
+                <input type="number" id="cotton-rate" placeholder="કેન્ડી નો ભાવ" step="any">
+                <span><h4>Rs./Candy</h4></span>
+            </div>
+            <div class="input-group">
+                <label for="expenses-reverse"><h3>Expenses</h3></label>
+                <input type="number" id="expenses-reverse" placeholder="વધારા નો ખર્ચ" step="any">
+                <span><h4>Rs./20 Kgs</h4></span>
+            </div>
+            <div class="input-group">
+                <label for="cotton-seed-reverse"><h3>Cotton Seed</h3></label>
+                <input type="number" id="cotton-seed-reverse" placeholder="કપસિયા નો ભાવ" step="any">
+                <span><h4>Rs./20 Kgs</h4></span>
+            </div>
+            <div class="input-group">
+                <label for="out-turn-reverse"><h3>Out Turn</h3></label>
+                <input type="number" id="out-turn-reverse" placeholder="ઉતારો" step="any">
+                <span><h4>%</h4></span>
+            </div>
+            <div class="input-group">
+                <label for="shortage-reverse"><h3>Shortage</h3></label>
+                <input type="number" id="shortage-reverse" placeholder="ઘાટી" step="any">
+                <span><h4>%</h4></span>
+            </div>
+            <br>
+            <div class="result">
+                <span>Cost of Kapas</span>
+                <span id="kapas-result"><h4>0</h4></span>
+                <span>Rs./20 Kgs</span>
+            </div>
+        </div>
+    </div>
+    <script src="script_1.js"></script>
+</body>
+</html>
