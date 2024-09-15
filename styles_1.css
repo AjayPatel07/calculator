@@ -9,6 +9,7 @@ body {
     height: 100vh; */
 }
 
+/*  ...................................................Ginning...........................................................................*/
 .container {
     background-color: rgb(134, 193, 211);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -86,7 +87,16 @@ header h1 {
     padding: 10px;
     height: 50px;
     border-radius: 80px;
+    /* background-color: #449ef8; */
+    text-decoration: none;
+}
+.side-menu ul li:hover {
+    margin: 15px; /* Reduced margin */
+    padding: 10px;
+    height: 50px;
+    border-radius: 80px;
     background-color: #449ef8;
+    text-decoration: none;
 }
 
 .side-menu ul li a {
@@ -94,11 +104,12 @@ header h1 {
     text-decoration: none;
     font-size: 2rem;
     display: block;
+    text-decoration: none;
 }
 
 .side-menu ul li a:hover {
     text-decoration: underline;
-    background-color: #449ef8;
+    text-decoration: none;
     
 }
 
@@ -191,4 +202,94 @@ header h1 {
 
 .tab-content.active {
     display: block;
+}
+/*....................................................About Us.....................................................*/
+
+.container_about {
+    background-color: rgb(134, 193, 211);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 460px;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.blog_1, .blog_2 {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.blog_1:hover, .blog_2:hover {
+    transform: translateY(-10px); /* Slightly raise the div on hover */
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.blog_1 {
+    background-color: #e0f7fa; /* Light cyan background */
+    border-left: 10px solid #00796b; /* Dark cyan border */
+}
+
+.blog_2 {
+    background-color: #e0f7fa; /* Light orange background */
+    border-left: 10px solid #ef6c00; /* Dark orange border */
+}
+/*..................................Login................................................*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 10px solid #ccc;
+    border-radius: 50px;
+}
+
+.sign-in-btn,.log-in-btn {
+    padding: 20px;
+    width: 50%;
+    background-color: rgb(37, 131, 159);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.sign-in-btn:hover,.log-in-btn:hover {
+    background-color: #007BFF;
 }
