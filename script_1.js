@@ -98,3 +98,51 @@ function showTab(tabName) {
         buttons[1].classList.add('active');
     }
 }
+
+//....................................login............................................
+// Store user datalet users = [];
+// Function to toggle visibility of the forms and hide the buttons
+function toggleForm(formType) {
+    const signInForm = document.getElementById('sign-in-form');
+    const loginForm = document.getElementById('log-in-form');
+    const signInBtn = document.getElementById('signInBtn');
+    const loginBtn = document.getElementById('loginBtn');
+
+    // Hide both buttons
+    signInBtn.style.display = 'none';
+    loginBtn.style.display = 'none';
+
+    // Show the form based on the button clicked
+    if (formType === 'signIn') {
+        signInForm.style.display = 'block';
+        loginForm.style.display = 'none';
+    } else if (formType === 'login') {
+        loginForm.style.display = 'block';
+        signInForm.style.display = 'none';
+    }
+}
+
+// Event listeners for the buttons
+document.getElementById('signInBtn').addEventListener('click', function() {
+    toggleForm('signIn');  // Show the Sign In form
+});
+
+document.getElementById('loginBtn').addEventListener('click', function() {
+    toggleForm('login');  // Show the Log In form
+});
+
+// Sign Up form submission handling
+document.getElementById('signInFormElement').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // You can add form submission handling here, like sign-up logic
+    alert('Sign Up Successful!');
+    location.reload(); // Refresh the page after form submission
+});
+
+// Log In form submission handling
+document.getElementById('loginFormElement').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // You can add form submission handling here, like log-in logic
+    alert('Login Successful!');
+    location.reload(); // Refresh the page after form submission
+});
